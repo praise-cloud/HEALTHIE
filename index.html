@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTHIE</title>
+    <script src="tailwindlib.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href= "global.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="shortcut icon" href="images/liver.svg" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+                    .content-auto{
+                        content-visibility: auto;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    }
+                }
+            
+                .margin-top-mean{
+                    margin-top: 1000px;
+                }
+            @layer components{
+            }
+            </style>
+            <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="flex flexBetween max-container padding-container relative z-30 py-5 my-5">
+        <h2 class="font-bold font-mono mx-auto text-bold text-4xl sm:2xl flex">
+            <img src="images/liver.svg" alt="logo" class="mr-2">
+            HEAL<span class=" text-green-500">THIE</span></h2>
+        <ul class="hidden h-full gap-12 lg:flex mx-auto font-bold font-mono text-xl sm:hidden">
+            <li><a href="#" class=" transition-all hover:text-2xl">About</a></li>
+            <li><a href="#" class=" transition-all hover:text-2xl">Service</a></li>
+            <li><a href="#" class=" transition-all hover:text-2xl">Explore</a></li>
+            <li><a href="#" class=" transition-all hover:text-2xl">Testimonials</a></li>
+            <a href="#" class="border-2 mt-[-3px] border-black rounded py-1 px-3 lg:flexCenter">Sign Up</a>
+        </ul>
+    </nav>
+
+    <section class="flex flex-col md:flex-row items-center justify-between p-48 md:p-46 max-container padding-container">
+        <div class="flex-1 text-center md:text-left md:mr-8">
+                <h1 class="text-7xl font-bold mb-4 font-mono w-[500px]">
+                    Welcome To HEAL<span class=" text-green-500">THIE</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 w-[600px]">Our health management application helps you track your wellness, set health goals, and receive personalized insights to improve your overall health..</p>
+                <a href="#" class="bg-green-500 text-white px-6 py-3 rounded font-bold text-xl hover:bg-green-600">Get Started</a>
+                <a href="#" class=" text-black px-6 py-3 font-semibold text-xl">Explore</a>
+            </div>
+            <div class="flex-1 mt-8 md:mt-0">
+                <img src="images/undraw_our_solution_re_8yk6.svg" class="w-full" alt="Home image">
+                <!-- <img src="images/blob.svg" class="w-30 h-30 absolute bottom-273px"> -->
+            </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row items-center justify-between p-48 md:p-46 max-container padding-container">
+
+    </section>
+</body>
+</html>
