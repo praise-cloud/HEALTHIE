@@ -27,12 +27,18 @@
                         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     }
                 }
-            
-                .margin-top-mean{
-                    margin-top: 1000px;
-                }
-            @layer components{
+        @layer components{
+                .card {
+                @apply flex flex-col items-center p-6 bg-white rounded-lg shadow-lg cursor-default;
+                @apply transition transform duration-200 ease-in-out;
             }
+            .card:hover {
+                @apply shadow-xl scale-105;
+            }
+            .card img {
+                @apply h-20 w-20 mb-4;
+            }
+        }
             </style>
             <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -50,7 +56,7 @@
         </ul>
     </nav>
 
-    <section class="flex flex-col md:flex-row items-center justify-between p-48 md:p-46 max-container padding-container">
+    <section class="flex flex-col md:flex-row items-center justify-between px-[26rem] py-48 md:p-46 max-container padding-container">
         <div class="flex-1 text-center md:text-left md:mr-8">
                 <h1 class="text-7xl font-bold mb-4 font-mono w-[500px]">
                     Welcome To HEAL<span class=" text-green-500">THIE</span>
@@ -62,11 +68,63 @@
             <div class="flex-1 mt-8 md:mt-0">
                 <img src="images/undraw_our_solution_re_8yk6.svg" class="w-full" alt="Home image">
                 <!-- <img src="images/blob.svg" class="w-30 h-30 absolute bottom-273px"> -->
-            </div>
+        </div>
     </section>
 
-    <section class="flex flex-col md:flex-row items-center justify-between p-48 md:p-46 max-container padding-container">
-
+    <section class="flex flex-col md:flex-row items-center justify-between p-48 md:p-46 pt-20 max-container padding-container">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900 font-mono text-center">Features</h2>
+        
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="images/features/undraw_personalization_re_grty.svg" alt="Personalized Health Insights">
+                    <h3 class="text-lg text-gray-900 font-mono font-bold">Personalized Health Insights</h3>
+                    <p class="mt-2 text-gray-600 text-center">Receive customized recommendations and insights based on your
+                        health data to help you make informed decisions about your wellness.</p>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="images/features/undraw_pie_graph_re_fvol.svg" alt="Goal Setting and Tracking">
+                    <h3 class="text-lg text-gray-900 font-mono font-bold">Goal Setting and Tracking</h3>
+                    <p class="mt-2 text-gray-600 text-center">Set health goals and track your progress over time with visual
+                        charts and reminders to stay motivated and achieve your objectives.</p>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="images/features/undraw_jogging_re_k28i.svg" alt="Activity and Fitness Monitoring">
+                    <h3 class="text-lg text-gray-900 font-mono font-bold">Activity and Fitness Monitoring</h3>
+                    <p class="mt-2 text-gray-600 text-center">Monitor your daily physical activities, including steps taken,
+                        calories burned, and exercise routines, to maintain a healthy lifestyle.</p>
+                </div>
+        
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="images/features/undraw_cooking_p7m1.svg" alt="Nutrition and Diet Management">
+                    <h3 class="text-lg text-gray-900 font-mono font-bold">Nutrition and Diet Management</h3>
+                    <p class="mt-2 text-gray-600 text-center">Keep track of your diet and nutritional intake with a
+                        comprehensive food diary, and get personalized meal suggestions based on your health goals.</p>
+                </div>
+        
+                <!-- Card 5 -->
+                <div class="card">
+                    <img src="images/features/undraw_report_re_f5n5.svg" alt="Health Records and Reports">
+                    <h3 class="text-lg text-gray-900 font-mono font-bold">Health Records and Reports</h3>
+                    <p class="mt-2 text-gray-600 text-center">Store and manage your medical records, test results, and reports
+                        in one secure place, and easily share them with healthcare providers when needed.</p>
+                </div>
+        
+                <!-- Card 6 -->
+                <div class="card">
+                    <img src="images/features/undraw_projections_re_ulc6.svg" alt="Symptom Checker and Health Tips">
+                    <h3 class="text-lg text-gray-900 font-mono font-bold">Symptom Checker and Health Tips</h3>
+                    <p class="mt-2 text-gray-600 text-center">Use the built-in symptom checker to assess potential health
+                        issues, and receive daily health tips and advice to improve your overall well-being.</p>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
