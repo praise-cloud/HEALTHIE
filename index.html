@@ -6,7 +6,6 @@
     <title>HEALTHIE</title>
     <script src="tailwindlib.js"></script>
     <script src="index.js"></script>
-    <link rel="stylesheet" href= "global.css">
     <script src="jquery-3.7.1.min.js"></script>
     <link rel="shortcut icon" href="images/liver.svg" type="image/x-icon">
     <script>
@@ -33,7 +32,7 @@
                 @apply transition transform duration-200 ease-in-out;
             }
             .card:hover {
-                @apply shadow-xl scale-105;
+                @apply ;
             }
             .card img {
                 @apply h-20 w-20 mb-4;
@@ -44,14 +43,23 @@
             .Data-body{
                 @apply font-bold text-gray-600 text-2xl font-mono text-center;
             }
+            .footer-social{
+                @apply text-2xl font-mono font-bold px-2;
+            }
+            .footer-links{
+                @apply text-gray-500 text-xl font-mono font-bold flex flex-col ;
+            }
+            .footer-hover{
+                @apply hover:text-black;
+            }
         }
             </style>
             <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <div class="max-container flex padding-container bg-green-500 py-5 "></div>
-    <nav class="flex flexBetween max-container padding-container relative z-30 py-5 my-5 items-center align-middle">
-        <a href="#" class="font-bold font-mono mx-auto text-bold text-4xl sm:2xl flex">
+    <nav class="flex flexBetween max-container padding-container relative z-30 py-5 my-5 items-center align-middle" id="nav">
+        <a href="#" class="font-bold mx-auto text-bold text-4xl font-mono sm:2xl flex">
             <img src="images/liver.svg" alt="logo" class="mr-2">
             HEAL<span class=" text-green-500">THIE</span></a>
         <ul class="hidden h-full gap-12 lg:flex mx-auto font-bold font-mono text-xl sm:hidden">
@@ -60,7 +68,7 @@
             <li><a href="#" class=" transition-all hover:text-2xl">Explore</a></li>
             <li><a href="#" class=" transition-all hover:text-2xl">Contact Us</a></li>
             <div class="flex border-2 mt-[-14px] border-black rounded py-3 px-3 lg:flexCenter items-center align-middle">
-                <a href="">Sign Up</a> 
+                <a href="#">Sign Up</a> 
                 <img src="images/user.svg" alt="user icon" class="mx-2 w-5">
             </div>
         </ul>
@@ -68,7 +76,7 @@
 
     <section class="flex flex-col md:flex-row items-center justify-between px-[26rem] py-5 md:p-46 max-container padding-container">
         <div class="flex-1 text-center md:text-left md:mr-8">
-                <h1 class="text-9xl font-bold mb-4 font-mono w-[500px]">
+                <h1 class="text-9xl font-bold mb-4 w-[500px]">
                     Welcome To HEAL<span class=" text-green-500">THIE</span>
                 </h1>
                 <p class="text-lg md:text-xl mb-8 w-[600px]">Our health management application helps you track your wellness, set health goals, and receive personalized insights to improve your overall health..</p>
@@ -128,66 +136,68 @@
 
 <section class="flex flex-col items-center justify-between p-10 md:p-16 max-w-[116rem] mx-auto">
     <div class="w-full px-4 py-8 lg:px-8">
-        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             <!-- Card 1 - Longer Box -->
-            <div
-                class="sm:col-span-2 lg:col-span-2 row-span-1 flex flex-col justify-center bg-white p-6 shadow-lg rounded-lg">
-                <h3 class="text-3xl lg:text-7xl text-gray-900 font-mono font-bold">Explore Our Services</h3>
-                <p class="mt-4 mb-5 text-gray-600 text-center lg:text-left">Receive customized recommendations and insights
+            <div class="sm:col-span-2 lg:col-span-2 row-span-1 flex flex-col justify-center bg-white p-6 shadow-lg rounded-lg hover:shadow-xl hover:scale-105">
+                <h2 class="font-bold font-mono text-bold text-left text-3xl sm:2xl flex">
+                    <img src="images/liver.svg" alt="logo" class="mr-2">
+                    FEAT<span class=" text-green-500">URE</span>
+                </h2>
+                <h3 class="text-3xl lg:text-7xl text-gray-900 font-bold">Explore Our Services</h3>
+                <p class="mt-4 mb-5 text-gray-600 text-xl text-left lg:text-left">Receive customized recommendations and insights
                     based on your
                     health data to help you make informed decisions about your wellness.</p>
-                    <a href="#" class="bg-green-500 text-white px-6 py-3 rounded font-bold text-xl border-green-600 hover:bg-green-600 w-44">Get
-                        Started</a>
+                    <a href="#" class="bg-green-500 text-white px-6 py-3 rounded font-bold text-xl border-green-600 hover:bg-green-600 w-44 text-center">Check In</a>
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center">
+            <div class="bg-white p-10 shadow-lg rounded-lg flex flex-col justify-center hover:shadow-xl hover:scale-105">
                 <img src="images/features/undraw_pie_graph_re_fvol.svg" alt="Goal Setting and Tracking" class="mb-4">
-                <h3 class="text-lg text-gray-900 font-mono font-bold">Goal Setting and Tracking</h3>
+                <h3 class="text-gray-900 font-bold text-center text-2xl">Goal Setting and Tracking</h3>
                 <p class="mt-2 text-gray-600 text-center">Set health goals and track your progress over time with visual
                     charts and reminders to stay motivated and achieve your objectives.</p>
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center">
+            <div class="bg-white p-10 shadow-lg rounded-lg flex flex-col justify-center hover:shadow-xl hover:scale-105">
                 <img src="images/features/undraw_jogging_re_k28i.svg" alt="Activity and Fitness Monitoring"
                     class="mb-8 mt-8">
-                <h3 class="text-lg text-gray-900 font-mono font-bold">Activity and Fitness Monitoring</h3>
+                <h3 class="text-center text-gray-900 font-bold text-2xl">Activity and Fitness Monitoring</h3>
                 <p class="mt-2 text-gray-600 text-center">Monitor your daily physical activities, including steps taken,
                     calories burned, and exercise routines, to maintain a healthy lifestyle.</p>
             </div>
 
             <!-- Card 4 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center">
+            <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center hover:shadow-xl hover:scale-105">
                 <img src="images/features/undraw_cooking_p7m1.svg" alt="Nutrition and Diet Management" class="mb-4">
-                <h3 class="text-lg text-gray-900 font-mono font-bold">Nutrition and Diet Management</h3>
+                <h3 class="text-2xl text-gray-900 text-center font-bold">Nutrition and Diet Management</h3>
                 <p class="mt-2 text-gray-600 text-center">Keep track of your diet and nutritional intake with a
                     comprehensive food diary, and get personalized meal suggestions based on your health goals.</p>
             </div>
 
             <!-- Card 5 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center">
+            <div class="bg-white p-10 shadow-lg rounded-lg flex flex-col justify-center hover:shadow-xl hover:scale-105">
                 <img src="images/features/undraw_report_re_f5n5.svg" alt="Health Records and Reports" class="mb-4">
-                <h3 class="text-lg text-gray-900 font-mono font-bold">Health Records and Reports</h3>
+                <h3 class="text-center text-gray-900 text-2xl font-bold">Health Records and Reports</h3>
                 <p class="mt-2 text-gray-600 text-center">Store and manage your medical records, test results, and
                     reports
                     in one secure place, and easily share them with healthcare providers when needed.</p>
             </div>
 
             <!-- Card 6 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center">
+            <div class="bg-white p-10 shadow-lg rounded-lg flex flex-col justify-center hover:shadow-xl hover:scale-105">
                 <img src="images/features/undraw_projections_re_ulc6.svg" alt="Symptom Checker and Health Tips"
                     class="mb-4">
-                <h3 class="text-lg text-gray-900 font-mono font-bold">Symptom Checker and Health Tips</h3>
+                <h3 class="text-center text-gray-900 text-2xl font-bold">Symptom Checker and Health Tips</h3>
                 <p class="mt-2 text-gray-600 text-center">Use the built-in symptom checker to assess potential health
                     issues, and receive daily health tips and advice to improve your overall well-being.</p>
             </div>
 
             <!-- Card 6 -->
-            <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center">
-                <img src="images/features/undraw_projections_re_ulc6.svg" alt="Symptom Checker and Health Tips"
+            <div class="bg-white p-10 shadow-lg rounded-lg flex flex-col justify-center hover:shadow-xl hover:scale-105">
+                <img src="images/features/undraw_advanced_customization_re_wo6h.svg" alt="Symptom Checker and Health Tips"
                     class="mb-4">
-                <h3 class="text-lg text-gray-900 font-mono font-bold">Symptom Checker and Health Tips</h3>
+                <h3 class="text-center text-gray-900 text-2xl font-bold">Advanced Customisation</h3>
                 <p class="mt-2 text-gray-600 text-center">Use the built-in symptom checker to assess potential health
                     issues, and receive daily health tips and advice to improve your overall well-being.</p>
             </div>
@@ -195,11 +205,110 @@
     </div>
 </section>
 
-    <i class="fa fa-bluetooth" aria-hidden="true"></i>
-
     <!-- about -->
-   
+<section class="flex flex-col md:flex-row items-center justify-between px-[26rem] py-8 md:p-46 max-container padding-container">
+    <div class="flex flex-1 mt-2 md:mt-0">
+            <img src="images/DOC2.png" alt="doctors" width="600" height="600">
+            </svg>
+    </div>
+    <div class="flex-1 mt-10 py-20 items-center md:text-left md:mr-8">
+            <h2 class="font-bold font-mono text-bold text-left text-3xl sm:2xl flex">
+                <img src="images/liver.svg" alt="logo" class="mr-2">
+                ABO<span class=" text-green-500">UT</span>
+            </h2>
+            <h1 class="text-7xl font-bold">We Offering Medical <span class=" text-green-500">HELP</span> at your finger Tips</h1>
+            <p class="text-lg md:text-xl mb-8 w-[600px]">Our health management application helps you track your wellness, set health
+                goals, and receive personalized insights to improve your overall health..</p>
+            
+            <!-- data -->
+            <div class="mt-10 flex gap-100 my-11 lg:mg-20 gap-6">
+                <div class="flex items-center gap-16 lg:flex-wrap">
+                    <div class="flex-1 mx-5">
+                        <h1 class="font-mono text-2xl font-bold text-left flex">
+                            <img src="images/liver.svg" alt="logo" class="mr-4">
+                            Personalised Health</h1>
+                        <p class="text-gray-600 text-xl whitespace-normal font-semibold font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti doloremque ipsam</p>
+                    </div>
 
-   
+                    <div class="flex-1 mx-5">
+                        <h1 class="font-mono text-2xl font-bold text-left flex">
+                            <img src="images/liver.svg" alt="logo" class="mr-4">
+                            Personalised Health
+                        </h1>
+                        <p class="text-gray-600 text-xl whitespace-normal font-semibold font-sans">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem corrupti doloremque ipsam</p>
+                    </div>
+
+                    <div class="flex-1 mx-5">
+                        <h1 class="font-mono text-2xl font-bold text-left flex">
+                            <img src="images/liver.svg" alt="logo" class="mr-4">
+                            Personalised Health
+                        </h1>
+                        <p class="text-gray-600 text-xl whitespace-normal font-semibold font-sans">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem corrupti doloremque ipsam</p>
+                    </div>
+
+                    <div class="flex-1 mx-5">
+                        <h1 class="font-mono text-2xl font-bold text-left flex">
+                            <img src="images/liver.svg" alt="logo" class="mr-4">
+                            Personalised Health
+                        </h1>
+                        <p class="text-gray-600 text-xl whitespace-normal font-semibold font-sans">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem corrupti doloremque ipsam</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="bg-green-500 text-white px-6 py-3 rounded font-bold text-xl border-green-600 hover:bg-green-600">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<footer class="flex flexBetween item-center">
+    <div class="flex max container padding-container mx-auto">
+        <div class="flex-1">
+            <div class="">
+                <a href="#" class="font-bold font-mono mx-auto text-bold text-4xl sm:2xl flex">
+                    <img src="images/liver.svg" alt="logo" class="mr-2">
+                    HEAL<span class=" text-green-500">THIE</span></a>
+            </div>
+            <div class="flex flex-col my-8 py-2 px-8 flexBetween ">
+                <div class="flex">
+                    <img src="images/liver.svg" alt="logo" class="mr-2">
+                    <p class="footer-links footer-hover">healthie@org.com</p>
+                </div>
+                <div class="flex">
+                    <img src="images/liver.svg" alt="logo" class="mr-2">
+                    <p class="footer-links footer-hover">@heakthie_</p>
+                </div>
+                <div class="flex">
+                    <img src="images/liver.svg" alt="logo" class="mr-2">
+                    <p class="footer-links footer-hover">@heakthie_</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 mt-10">
+            <div class="footer-links">
+                <a href="#" class="footer-hover">Career</a>
+                <a href="#" class="footer-hover">Questions</a>
+                <a href="#" class="footer-hover">Policies</a>
+                <a href="#" class="footer-hover">Privacy Agreements</a>
+            </div>
+        </div>  
+        <div class="flex-1 mt-10">
+            <div class="footer-links">
+                <a href="#" class="footer-hover">Support and help</a>
+                <a href="#" class="footer-hover">Blog</a>
+                <a href="#" class="footer-hover">Dontations</a>
+            </div>
+        </div>
+
+        <div class="item-center align-middle my-14">
+            <div class="flex mb-10">
+                <p class="footer-links">Lorem ipsum dolor sit amet.copyright @</p>
+            </div>
+            <a href="#nav" class="bg-green-500 text-white px-6 py-3 rounded font-bold text-xl border-green-600 hover:bg-green-600">To Top</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
